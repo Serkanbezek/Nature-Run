@@ -242,9 +242,11 @@ MonoBehaviour:
   dirtParticle: {fileID: 386970036}
   jumpSound: {fileID: 8300000, guid: 113ee460fadc340e4957a7404a9fbb27, type: 3}
   crashSound: {fileID: 8300000, guid: 913d6445ee8cc4152a9c18da590ee203, type: 3}
-  jumpForce: 600
+  jumpForce: 550
+  doubleJumpForce: 550
   gravityModifier: 2
   isOnGround: 1
+  doubleJumpUsed: 0
   gameOver: 0
 --- !u!65 &507696831
 BoxCollider:
@@ -830,7 +832,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d45da6ab8e7f9a40a78269eaa764069, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstaclePrefab: {fileID: 1189605162496415341, guid: da52b247fc27eae429946fe1d8118284, type: 3}
+  obstaclePrefabs:
+  - {fileID: 1544633421893452231, guid: c187406bfa954454d9bd0f22d3a340cf, type: 3}
+  - {fileID: 8790258877846401728, guid: 0289b3452519e6544b7e3c8c40a8aaae, type: 3}
+  - {fileID: 645208110292228531, guid: 0a7dd8173cf1bff469c3ab362dfa88db, type: 3}
+  - {fileID: 2065980355146998133, guid: 15107b20573e4ea43a68eb2e2966360f, type: 3}
+  - {fileID: 3932609527052419389, guid: b32e9cb9b9f4ca348aaacbd63206b2a0, type: 3}
 --- !u!4 &1228917507
 Transform:
   m_ObjectHideFlags: 0
